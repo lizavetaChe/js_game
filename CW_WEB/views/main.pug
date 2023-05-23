@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Login
+        link(rel="stylesheet", href='public/fontawesome-free-6.2.1-web/css/all.css')
+        link(rel="stylesheet", href='public/fontawesome-free-6.2.1-web/css/fontawesome.css')
+        link(href='./public/stylesheets/style.css', rel="stylesheet")
+    body
+        script(src='./public/javascripts/index.js', type="module")
+        div(id="TITLE", style= "center")
+            i( class="fa-solid fa-snowflake", style="margin-right: 10px")
+            p(style="text-decoration: underline dotted")="  LEGEND'S OF ICE CASTLE"
+            i( class="fa-solid fa-snowflake", style="margin-left: 10px")
+        div(id='root')
+            table(id="stats", style="float: right")
+                tr
+                    td(style="display: flex")
+                        i(class="fa-solid fa-street-view", style="margin-right: 30px")
+                        div(id='nickname')=`${nickname}`
+                tr
+                    td(style="display: flex")
+                        i(class="fa-solid fa-heart", style="margin-right: 30px")
+                        div(id='life')=`1`
+                tr
+                    td(style="display: flex")
+                        i(class="fa-solid fa-person-running", style="margin-right: 30px")
+                        div(id='speed')=`4`
+                tr
+                    td(style="display: flex")
+                        i(class="fa-solid fa-fire", style="margin-right: 30px")
+                        div(id='power')=`1`
+                tr
+                    td(style="display: flex")
+                        i(class="fa-regular fa-clock", style="margin-right: 30px")
+                        div(id='currentTime')='0'
+            canvas(width=800, height=600, id='gamefield')
+

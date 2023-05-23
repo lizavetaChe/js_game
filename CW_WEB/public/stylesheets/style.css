@@ -1,0 +1,133 @@
+body{
+    background: #2e3564;
+    font-family: "Courier New", fantasy;
+    font-size: 20px;
+}
+
+#TITLE{
+    position: relative;
+    font-weight: 700;
+    color: #d7e2ea;
+    display: flex;
+    justify-content: center;
+    top: 40px;
+    font-size: 40px;
+}
+
+#Rec{
+    position: relative;
+    font-weight: 100;
+    color: LightSteelBlue;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Bradley Hand", fantasy;
+}
+
+#loginform{
+    margin: 120px auto auto;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    background: #d7e2ea;
+    color: #2e3564;
+    width: 45%;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .7);
+}
+
+#loginform label,button,input{
+    position: relative;
+    display: block;
+    margin: 10px auto auto;
+    font-size: 20px;
+}
+
+button{
+    cursor: pointer;
+    font-style: italic;
+}
+
+.game_button{
+    text-decoration: none;
+    display: inline-block;
+    color: lightcyan;
+    padding: 20px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: "Courier New", fantasy;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, RoyalBlue 0%, #2e3564, MediumSlateBlue 100%);
+    background-size: 200% auto;
+    transition: .5s;
+}
+.game_button:hover {
+    background-position: right center;
+}
+
+input{
+    color: midnightblue;
+    background: LightSkyBlue;
+    border-color: midnightblue;
+
+}
+
+.next{
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Courier New", fantasy;
+    color: #2e3564;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    border-color: DarkBlue;
+    background-image: linear-gradient(to right, MediumSlateBlue 0%, lightblue, DarkSlateBlue 100%);
+    background-size: 200% auto;
+    transition: .5s;
+}
+.next:hover {
+    background-position: right center;
+}
+
+.story{
+    position: absolute;
+    left: 600px;
+}
+
+.gamefield{
+    border-style: solid;
+    border-color: lightblue;
+    border-width: 5px;
+    top: 10px;
+    background: #d7e2ea;
+    border-spacing: 5px;
+}
+
+#root{
+    position: absolute;
+    left: 420px;
+    margin-top: 37px;
+}
+
+#stats{
+    color: #d7e2ea;
+    border-spacing: 10px;
+}
+
+#user_table {
+    color: midnightblue;
+    background: #d7e2ea;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    border: solid 2px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    font-weight: 500;
+}
+
+#user_table td{
+    padding: 5px 10px;
+    border: solid 1px;
+}

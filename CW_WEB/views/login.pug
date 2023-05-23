@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Game
+        link(rel="stylesheet", href='public/fontawesome-free-6.2.1-web/css/all.css')
+        link(href='./public/stylesheets/style.css', rel="stylesheet")
+    body
+        script(src='./public/javascripts/login.js')
+        div(id="TITLE", style= "center")
+            i( class="fa-solid fa-snowflake", style="margin-right: 10px")
+            p(style="text-decoration: underline dotted")="  LEGEND'S OF ICE CASTLE"
+            i( class="fa-solid fa-snowflake", style="margin-left: 10px")
+        div(id='loginform')
+            label(for='nickname')='О! Великий рыцарь, как Ваше имя?'
+            input(type='text', id='nickname', placeholder='Player')
+            button(class='game_button', onclick='login()')="Начать новое приключение!"
+
+

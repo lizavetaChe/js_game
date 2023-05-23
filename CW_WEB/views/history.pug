@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title History
+        link(rel="stylesheet", href='public/fontawesome-free-6.2.1-web/css/all.css')
+        link(href='./public/stylesheets/style.css', rel="stylesheet")
+    body
+        div(id="TITLE", style= "center")
+            i( class="fa-solid fa-snowflake", style="margin-right: 10px")
+            p(style="text-decoration: underline dotted")="  LEGEND'S OF ICE CASTLE"
+            i( class="fa-solid fa-snowflake", style="margin-left: 10px")
+        div(class="story")
+            script(src='./public/javascripts/history.js')
+            canvas(width=510, height=600, id='scroll')
+            button(class='next', onclick='game()')="В путь!"
